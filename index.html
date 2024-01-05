@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotante</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Onest&family=Poppins:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,500;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Slick Slider Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-toggle">
+            <div class=" d-flex justify-between navbar-body">
+                <input type="checkbox" class="toggle" id="toggle">
+                <div class="toggle-image">
+                    <img src="./images/rotante-logo.png" alt="Rotante" class="toggle-img" title="Rotante">
+                </div>
+                <label for="toggle" class="toggle-icon">
+                    <div class="bar-top"></div>
+                    <div class="bar-mid"></div>
+                    <div class="bar-bottom"></div>
+                </label>
+                <div class="slidebar">
+                    <div class="toggle-links">
+                        <a href="#" class="header-link" title="Anasayfa">
+                            <li>Anasayfa</li>
+                        </a>
+                        <a href="#" class="header-link" title="Hakkımzda">
+                            <li>Hakkımızda</li>
+                        </a>
+                        <a href="#" class="header-link" title="Lezzetlerimiz" id="lezzetlerimiz"
+                            onclick="openLezzetlerimiz()">
+                            <li>Lezzetlerİmİz <i class="fa-solid fa-chevron-down"></i></li>
+                        </a>
+                        <a href="#" class="header-link" title="Blog">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#" class="header-link" title="İletişim">
+                            <li>İletİşİm</li>
+                        </a>
+                        <div class="d-flex navbar-buttons-toggle">
+                            <div>
+                                <a href="#" class="search-bar d-flex" title="Arayın"><i
+                                        class="fa-solid fa-magnifying-glass fa-xl search-icon"></i></i></a>
+                            </div>
+                            <div>
+                                <a href="#" class="search-bar d-flex" title="Dil"><i
+                                        class="fa-solid fa-language language fa-xl language-icon"></i></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-logo d-flex">
+                    <img src="./images/rotante-logo.png" alt="Rotante" title="Rotante">
+                </div>
+                <div class="d-flex navbar-links-and-buttons">
+                    <div class="navbar-links d-flex">
+                        <a href="#" class="navbar-link" title="Anasayfa">
+                            <li>Anasayfa</li>
+                        </a>
+                        <a href="#" class="navbar-link" title="Hakkımzda">
+                            <li>Hakkımızda</li>
+                        </a>
+                        <a href="#" class="navbar-link" title="Lezzetlerimiz">
+                            <li>Lezzetlerİmİz <i class="fa-solid fa-chevron-down"></i></li>
+                        </a>
+                        <a href="#" class="navbar-link" title="Blog">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#" class="navbar-link" title="İletişim">
+                            <li>İletİşİm</li>
+                        </a>
+                    </div>
+                    <div class="navbar-buttons d-flex">
+                        <a href="#" class="search-bar d-flex" title="Arayın"><i
+                                class="fa-solid fa-magnifying-glass fa-xl search-icon"></i></i></a>
+                        <a href="#" class="search-bar d-flex" title="Dil"><i
+                                class="fa-solid fa-language language fa-xl language-icon"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-advert">
+        <div class="banner-order-container">
+            <div class="banner-order">
+                <div class="order-content">
+                    <div class="order-delivery-icon">
+                        <i class="fa-solid fa-motorcycle fa-xl icon-scale"></i>
+                    </div>
+                    <div class="order-text">
+                        <h2>
+                            Hemen <br>
+                            <span>SİPARİŞ VER</span>
+                            <h3>+54 (030) 040 030</h3>
+                        </h2>
+                    </div>
+                    <div class="order-chevron-icon">
+                        <a href="#" target="_blank"><i
+                                class="fa-solid fa-chevron-right fa-l icon-scale"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="banner-container header-space">
+        <div>
+            <div class="banner-slider">
+                <div>
+                    <div class="burasiposrel">
+                        <div class="container">
+                            <div class="banner-item">
+                                <div class="banner-content">
+                                    <h2 class="first-slide-padding">
+                                        <div class="banner-title-1">En Çok Satılan</div>
+                                        <div class="banner-title-2 red-color">SUPER</div>
+                                        <div class="banner-title-3">BURGER</div>
+                                    </h2>
+                                </div>
+                                <div class="banner-image">
+                                    <img src="images/Group 14.png">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="banner-image-container">
+                            <img src="images/Group 14.png" >
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="burasiposrel">
+                        <div class="container">
+                            <div class="banner-item">
+                                <div class="banner-content">
+                                    <h2>
+                                        <div class="banner-title-1 white yellow-color">En Popüler</div>
+                                        <div class="banner-title-3 yellow-color">Cheese</div>
+                                        <div class="banner-title-3 text-uppercase">BURGER</div>
+                                    </h2>
+                                </div>
+                                <div class="banner-image display-slide-img-2-3">
+                                    <img src="./images/banner-img.png" >
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-image-container">
+                            <img src="./images/banner-img.png">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="burasiposrel">
+                        <div class="container">
+                            <div class="banner-item">
+                                <div class="banner-content">
+                                    <h2>
+                                        <div class="banner-title-1 white yellow-color">En Popüler</div>
+                                        <div class="banner-title-3 yellow-color">Cheese</div>
+                                        <div class="banner-title-3 text-uppercase">BURGER</div>
+                                    </h2>
+                                </div>
+                                <div class="banner-image display-slide-img-2-3">
+                                    <img src="./images/banner-img.png">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-image-container">
+                            <img src="./images/banner-img.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="d-flex f-wrap container white cards">
+            <div class="card-container red">
+                <div class="card-content">
+                    <h3> Lorem, ipsum dolor.</h3>
+                    <h4> Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</h4>
+                    <a href="#" class="card-detaylibilgi" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                </div>
+                <div class="card-img">
+                    <img src="./images/card-burger.png" alt="Rotante Special Cheese Burger"
+                        title="Special Cheese Burger" >
+                </div>
+            </div>
+            <div class="card-container yellow">
+                <div class="card-content">
+                    <h3> Lorem, ipsum dolor.</h3>
+                    <h4> Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</h4>
+                    <a href="#" class="card-detaylibilgi">Detaylı Bilgi</a>
+                </div>
+                <div class="card-img">
+                    <img src="./images/card-burger.png" alt="Rotante Special Cheese Burger"
+                        title="Special Cheese Burger" >
+                </div>
+            </div>
+            <div class="card-container green">
+                <div class="card-content">
+                    <h3> Lorem, ipsum dolor.</h3>
+                    <h4> Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</h4>
+                    <a href="#" class="card-detaylibilgi">Detaylı Bilgi</a>
+                </div>
+                <div class="card-img">
+                    <img src="./images/card-burger.png" alt="Rotante Special Cheese Burger"
+                        title="Special Cheese Burger" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infos">
+        <div class="container">
+            <div class="offer-img-note">
+                <div class="offer-image-note responsive-image-open">7/24</div>
+            </div>
+            <img src="./images/offer-burger.png" alt="Special Cheese Burger"
+                class="rotante-img responsive-image-open left-image">
+            <div class="info-section info-section-details">
+                <div class="info-image">
+                    <div class="offer-img-note">
+                        <div class="offer-image-note responsive-image-close">7/24</div>
+                    </div>
+                    <img src="./images/offer-burger.png" alt="Special Cheese Burger"
+                        class="rotante-img responsive-image-close">
+                </div>
+                <div class="info-content-container">
+                    <div class="info-content">
+                        <h2 class="title-k-urunler">Kampanyalı Ürünler</h2>
+                        <div class=" campaign-content">
+                            <div class="d-flex content-text">
+                                <div class="d-flex text-ico-group">
+                                    <img src="./images/company-burger.png" alt="Special Cheese Burger"
+                                        class="infos-icon">
+                                    <h3>Special Cheese Burger</h3>
+                                </div>
+                                <div class="infos-child-text">
+                                    <a href="#" class="custom-chevron-button"><i
+                                            class="fa-solid fa-chevron-right fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-flex content-text">
+                                <div class="d-flex text-ico-group">
+                                    <img src="./images/company-burger.png" alt="Special Cheese Burger"
+                                        class="infos-icon">
+                                    <h3>Special Cheese Burger</h3>
+                                </div>
+                                <div class="infos-child-text">
+                                    <a href="#" class="custom-chevron-button"><i
+                                            class="fa-solid fa-chevron-right fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-flex content-text">
+                                <div class="d-flex text-ico-group">
+                                    <img src="./images/company-burger.png" alt="Special Cheese Burger"
+                                        class="infos-icon">
+                                    <h3>Special Cheese Burger</h3>
+                                </div>
+                                <div class="infos-child-text">
+                                    <a href="#" class="custom-chevron-button"><i
+                                            class="fa-solid fa-chevron-right fa-xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <img src="./images/about-rotante.png" alt="Rotante Hakkında" class="rotante-img responsive-image-open">
+            <div class="info-section background-rotante-hakkinda info-section-details responsive-image-">
+                <div class="info-content-container-margin-right">
+                    <div class="info-content">
+                        <h2 class="title-r-hakkinda">
+                            Rotante Hakkında
+                        </h2>
+                        <p class="content-alt">
+                            Lorem Ipsum sit amet, consected elit sad ıpsumed Ipsum sit amet, consected
+                            elit sad ıpsumed Lorem Ipsum sit amet, consected elit sad ıpsumed Ipsum
+                            sit amet, consected elit sad ıpsumed.
+                            Lorem Ipsum sit amet, consected elit sad ıpsumed Ipsum
+                            sit amet, consected elit sad ıpsumed
+                            Lorem Ipsum sit amet, consected elit sad ıpsumed Ipsum.
+                        </p>
+                        <a href="#" class="custom-btn d-inline-block">Detaylı Bilgi</a>
+                    </div>
+                </div>
+                <div class="info-image-right">
+                    <img src="./images/about-rotante.png" alt="Rotante Hakkında"
+                        class="rotante-img responsive-image-close">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="shadow-group">
+                <h2 class="shadow-title-blog">Blog</h2>
+            </div>
+            <div class="blog-slider">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="Karahan D." title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="./images/blog-menu-1.png" alt="Rotante" title="rotante">
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="d-flex blog-infos">
+                            <div class="d-flex blog-infos-header">
+                                <div class="blog-footer-user-img d-flex">
+                                    <img src="./images/profile-user.png" alt="User" title="User">
+                                </div>
+                                <p>Karahan D.</p>
+                            </div>
+                            <div class="d-flex blog-date-body">
+                                <div class="blog-clock-icon d-flex">
+                                    <i class="fa-regular fa-clock clock-icon"></i>
+                                </div>
+                                <p>31.03.2031</p>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap blog-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, magnam!</h3>
+                        </div>
+                        <div class="blog-footer-link">
+                            <a href="#" class="blog-button d-inline-block" title="Detaylı Bilgi">Detaylı Bilgi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="comment">
+        <div class="container">
+            <div class="d-flex shadow-group">
+                <div class="shadow-group">
+                    <h2 class="shadow-title-musteriyorumlari">Müşteri Yorumları</h2>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-card-text">
+                        <div class="testimonials-header-icon-quote">
+                            <i class="fa-solid fa-quote-left quote-icon fa-xl"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus assumenda.
+                        </p>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonials-stars d-flex">
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-light-yellow"></i>
+                        </div>
+                        <div class="testimonial-card-footer d-flex">
+                            <div class="d-flex card-user">
+                                <div class="testimonial-footer-user-icon"><img src="./images/profile-user.png"
+                                        alt="Rotante Testimonial User" title="User"></div>
+                                <div class="user-infos">
+                                    <h3>Karahan D. <br>
+                                        <span> konum,yer</span>
+                                    </h3>
+                                </div>
+
+                            </div>
+                            <div class="d-flex card-footer-burger bottom-1">
+                                <img src="./images/comment-burger.png" alt="Rotante Testimonial Special Burger"
+                                    title="Rotante Burger">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-text">
+                        <div class="testimonials-header-icon-quote">
+                            <i class="fa-solid fa-quote-left quote-icon fa-xl"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus assumenda.
+                        </p>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonials-stars d-flex">
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-light-yellow"></i>
+                        </div>
+                        <div class="testimonial-card-footer d-flex">
+                            <div class="d-flex card-user">
+                                <div class="testimonial-footer-user-icon"><img src="./images/profile-user.png"
+                                        alt="Rotante Testimonial User" title="User"></div>
+                                <div class="user-infos">
+                                    <h3>Karahan D. <br>
+                                        <span> konum,yer</span>
+                                    </h3>
+                                </div>
+
+                            </div>
+                            <div class="d-flex card-footer-burger bottom-1">
+                                <img src="./images/comment-burger.png" alt="Rotante Testimonial Special Burger"
+                                    title="Rotante Burger">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-text">
+                        <div class="testimonials-header-icon-quote">
+                            <i class="fa-solid fa-quote-left quote-icon fa-xl"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus assumenda.
+                        </p>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonials-stars d-flex">
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-light-yellow"></i>
+                        </div>
+                        <div class="testimonial-card-footer d-flex">
+                            <div class="d-flex card-user">
+                                <div class="testimonial-footer-user-icon"><img src="./images/profile-user.png"
+                                        alt="Rotante Testimonial User" title="User"></div>
+                                <div class="user-infos">
+                                    <h3>Karahan D. <br>
+                                        <span> konum,yer</span>
+                                    </h3>
+                                </div>
+
+                            </div>
+                            <div class="d-flex card-footer-burger bottom-1">
+                                <img src="./images/comment-burger.png" alt="Rotante Testimonial Special Burger"
+                                    title="Rotante Burger">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card-text">
+                        <div class="testimonials-header-icon-quote">
+                            <i class="fa-solid fa-quote-left quote-icon fa-xl"></i>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis accusamus assumenda.
+                        </p>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonials-stars d-flex">
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-yellow"></i>
+                            <i class="fa-solid fa-star star-light-yellow"></i>
+                        </div>
+                        <div class="testimonial-card-footer d-flex">
+                            <div class="d-flex card-user">
+                                <div class="testimonial-footer-user-icon"><img src="./images/profile-user.png"
+                                        alt="Rotante Testimonial User" title="User"></div>
+                                <div class="user-infos">
+                                    <h3>Karahan D. <br>
+                                        <span> konum,yer</span>
+                                    </h3>
+                                </div>
+
+                            </div>
+                            <div class="d-flex card-footer-burger bottom-1">
+                                <img src="./images/comment-burger.png" alt="Rotante Testimonial Special Burger"
+                                    title="Rotante Burger">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer footer-section">
+        <div class="d-flex f-wrap justify-between container padding-15">
+            <div class="rotante-main-footer w-25">
+                <a href="#" class=""><img src="./images/rotante-logo.png" alt="Rotante Logo" title="Rotante"
+                        class="footer-rotante-logo"></a>
+
+                <p>Lorem Ipsum sit amet, consected elit
+                    sad ıpsumed Ipsum sit amet, consected
+                    ıpsumed Ipsum sit amet</p>
+                <div class="footer-link d-flex">
+                    <a href="#" class="" title="İnstagram"><i
+                            class="fa-brands fa-instagram fa-xl ig-link-bg"></i></i></a>
+                    <a href="#" class="" title="Twitter"><i class="fa-brands fa-twitter fa-xl tw-link-bg"></i></i></a>
+                    <a href="#" class="" title="Facebook"><i
+                            class="fa-brands fa-facebook-f fa-xl fb-link-bg"></i></i></a>
+                </div>
+            </div>
+            <div class="footer-kurumsal d-flex">
+                <div class="d-flex">
+                    <p class="yellow-color margin-none kurumsal-text footer-title">Kurumsal</p>
+                </div>
+                <div class="links">
+                    <ul class="p-0">
+                        <a href="#">
+                            <li>Anasayfa</li>
+                        </a>
+                        <a href="#">
+                            <li>Hakkımızda</li>
+                        </a>
+                        <a href="#">
+                            <li>Hizmetlerimiz</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#">
+                            <li>İletişim</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-lezzetler">
+                <div class="d-flex lezzetler-text">
+                    <p class="yellow-color margin-none footer-title">Lezzetler</p>
+                </div>
+                <div class="yemekler">
+                    <ul class="p-0">
+                        <li>Rotante olarak </li>
+                        <li>Çıtır tavuk (fc) </li>
+                        <li>Hamburger </li>
+                        <li> Tacos </li>
+                        <li>Makarna </li>
+                        <li>Kore usulü pilav </li>
+                        <li> Soğan halkası</li>
+                        <li>Peynir çubukları </li>
+                        <li>Patates </li>
+                        <li>Çorba </li>
+                        <li>Su</li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-iletisim w-25">
+                <div class="d-flex iletisime-gecin">
+                    <p class="yellow-color margin-none footer-title">Bizimle İletişime Geçin</p>
+                </div>
+                <div class="iletisim-bilgileri">
+                    <div class="d-flex address">
+                        <div class="icon-background d-flex">
+                            <i class="fa-solid fa-location-dot fa-xl"></i>
+                        </div>
+                        <a href="#" class="white contact-text">
+                            Aşıq Molla Cümə küçəsi 46 E Narimano
+                            /Baku Azerbaycan</p>
+                        </a>
+                    </div>
+                    <div class="d-flex address phone">
+                        <div class="icon-background d-flex phone-icon">
+                            <i class="fa-solid fa-phone fa-xl"></i>
+                        </div>
+                        <a href="#" class="white contact-text">+90 123 456 789</p>
+                        </a>
+                    </div>
+                    <div class="d-flex address phone">
+                        <div class="icon-background d-flex phone-icon">
+                            <i class="fa-solid fa-phone fa-xl"></i>
+                        </div>
+                        <a href="#" class="white contact-text">
+                            +90 123 456 789</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Rotante d-flex f-wrap white container">
+            <p>@ All Copyright 2023 By Rotante.com </p>
+        </div>
+    </section>
+
+    <!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
